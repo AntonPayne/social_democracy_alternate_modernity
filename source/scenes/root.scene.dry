@@ -22,7 +22,7 @@ Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
 Q.year = 2021;
-Q.month = 1;
+Q.month = 4;
 // how many actions have been taken this month?
 Q.month_actions = 0;
 
@@ -326,25 +326,26 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Hindenburg";
+Q.president = "Steinmeier";
 Q.chancellor = "Merkel";
 Q.chancellor_party = "CDU";
-Q.vice_chancellor = "Olaf Scholz"
+Q.vice_chancellor = "Scholz"
 Q.vice_chancellor_party = "SPD"
 Q.spd_in_government = 1;
 Q.cdu_in_government = 1;
 Q.g_in_government = 0;
-Q.fdp_in_government = 1;
+Q.fdp_in_government = 0;
 Q.dnvp_in_government = 0;
 Q.linke_in_government = 0;
 Q.afd_in_government = 0;
 
-Q.in_right_coalition = 0;
-// Weimar coalition = SPD + Z + DDP
-Q.in_weimar_coalition = 0;
+// Groko = SPD + CDU + CSU
+Q.in_grand_coalition = 1;
+// Traffic Light coalition = SPD + FDP + Greens
+Q.in_traffic_light_coalition = 0;
 // Grand coalition = SPD + Z + BVP + DDP + DVP
 // also includes the "new grand coalition" of SPD + Z + BVP + DDP + DVP + Others
-Q.in_grand_coalition = 0;
+Q.in_germany_coalition = 0;
 // Popular front = SPD + KPD + Z + DDP
 Q.in_popular_front = 0;
 // left coalition = SPD + KPD + left-splinters
@@ -371,22 +372,22 @@ Q.minority_government = 0;
 // ministries - which parties control the ministries?
 // starting with the 4th Merkel cabinet https://en.wikipedia.org/wiki/Fourth_Merkel_cabinet
 // is the agricultural ministry useful at all?
-Q.foreign_minister = 'Streseman';
-Q.foreign_minister_party = 'DVP';
-Q.interior_minister = 'von Keudell';
-Q.interior_minister_party = 'DNVP';
-Q.justice_minister = 'Hergt';
-Q.justice_minister_party = 'DNVP';
-Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
-Q.reichswehr_minister = 'Groener';
-Q.reichswehr_minister_party = 'I';
-Q.economic_minister = 'Curtius';
-Q.economic_minister_party = 'DVP';
-Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
-Q.agriculture_minister = 'Schiele';
-Q.agriculture_minister_party = 'DNVP';
+Q.foreign_minister = 'Maas';
+Q.foreign_minister_party = 'SPD';
+Q.interior_minister = 'Seehofer';
+Q.interior_minister_party = 'CSU';
+Q.justice_minister = 'Lambrecht';
+Q.justice_minister_party = 'SPD';
+Q.labor_minister = 'Heil';
+Q.labor_minister_party = 'SPD';
+Q.defence_minister = 'Kramp-Karrenbauer';
+Q.defence_minister_party = 'CDU';
+Q.economic_minister = 'Altmaier';
+Q.economic_minister_party = 'CDU';
+Q.finance_minister = 'Scholz';
+Q.finance_minister_party = 'SPD';
+Q.agriculture_minister = 'Klöckner';
+Q.agriculture_minister_party = 'CDU';
 
 // Events: what has occurred?
 Q.panzerkreuzer_seen = 0;
@@ -502,7 +503,7 @@ Q.no_majority_elections = 0;
 Q.in_election = 1;
 Q.next_election_year = 2021;
 Q.next_election_month = 9;
-Q.next_election_time = 5;
+Q.next_election_time = 4;
 // government affairs timers
 Q.agricultural_policy_timer = 0;
 Q.domestic_enemies_timer = 0;
